@@ -9,7 +9,7 @@ int main() {
    
    srand(time(0));
    int a;
-   int n = rand()%10 + 1;
+   int n = rand()%100 + 1;
    cout<<"yup! I have chossen the no.Now your guessing time ⬇⬇⬇\n";
    cout<<"3 Chances\n";
    
@@ -20,11 +20,11 @@ int main() {
    
    
    
-   if(n>a){
+   if(n<a){
        cout<<"too High too High !";
        cout<<":-";
        cin>>a;
-       if(n>a){
+       if(n<a){
            cout<<"again too High too High !";
            cout<<":-";
            cin>>a;
@@ -38,7 +38,7 @@ int main() {
                cout<<"Finally you find it correct !!";
            }
        }
-       else if(n<a){
+       else if(n>a){
            cout<<"Too low Too low !";
            cout<<":-";
            cin>>a;
@@ -57,7 +57,7 @@ int main() {
            cout<<"WOW you correct it right";
        }
    }
-   else if(n<a){
+   else if(n>a){
        cout<<"too low too low !";
        cout<<":-";
        cin>>a;
@@ -99,7 +99,7 @@ int main() {
        cout<<"WTH ! you guessed it Right";
    }
    
-   
+   cout<<"\nThe number is "<<n;
    
 
     return 0;
